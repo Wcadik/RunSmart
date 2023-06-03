@@ -1,0 +1,49 @@
+.advantage{
+    min-height: 473px;
+    padding: 73px 0 0 0;
+    background-color: #f6f6f6;
+    &__subheader{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__icons{
+        margin-top: 65px;
+        width: 952px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__icon{
+        width: 277px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+    &__title{
+        margin-top: 30px;
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__descr{
+        display: inline-block;
+        margin-top: 20px;
+    }
+    &__href{
+        font-family: 'MuseoModerno';
+        font-weight: 300;
+        font-size: 13px;
+        text-decoration-line: underline;
+        color: #FF0000;
+        &:hover{
+            color: #FF0000;
+        }
+    }
+}
