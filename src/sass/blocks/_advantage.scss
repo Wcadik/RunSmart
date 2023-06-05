@@ -11,7 +11,7 @@
     }
     &__icons{
         margin-top: 65px;
-        width: 952px;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -46,4 +46,10 @@
             color: #FF0000;
         }
     }
+}
+.d-visible{
+    display: flex;
+}
+.d-hidden{
+    display: none;
 }
