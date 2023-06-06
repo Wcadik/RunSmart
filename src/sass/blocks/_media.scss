@@ -180,15 +180,21 @@
             align-items: center;
         }
         &__header{
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 33px;
+            line-height: 33px;
+            text-align: center;
+            width: 100%;
+            padding: 0 25px;
         }
         &__subheader{
-            font-size: 19px;
-            line-height: 19px;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
         }
         &__icons{
-            width: 370px;
+            width: 380px;
         }
         &__icon{
             font-size: 13px;
@@ -200,7 +206,7 @@
 }
 @media (max-width: 426px){
     .button{
-        width: 120px;
+        width: 124px;
         height: 25px;
         font-size: 10px;
         &_main{
@@ -212,31 +218,23 @@
     }
     .header{
         &__official{
-            font-size: 10px;
+            font-size: 9.5px;
             span{
                 font-size: 14px;
             }
         }
         &__phone{
-            font-size: 14px;
+            font-size: 15px;
         }
     }
     .promo{
-        &__header{
-            font-size: 29px;
-            line-height: 29px;
-        }
-        &__subheader{
-            font-size: 17px;
-            line-height: 17px;
-        }
         &__icons{
             width: 350px;
         }
         &__icon{
-            font-size: 11px;
+            font-size: 12px;
             img{
-                width: 34px;
+                width: 35px;
             }
         }
         &__link{
@@ -246,22 +244,28 @@
     }
 }
 @media (max-width: 381px){
+    .header{
+        &__official{
+            margin: 0 10%;
+            margin-top: 15px;
+        }
+    }
     .promo{
         &__header{
-            font-size: 26px;
-            line-height: 26px;
+            font-size: 30px;
+            line-height: 30px;
         }
         &__subheader{
-            font-size: 15px;
-            line-height: 15px;
+            font-size: 17.5px;
+            line-height: 17.5px;
         }
         &__icons{
-            width: 300px;
+            width: 270px;
         }
         &__icon{
-            font-size: 13px;
+            font-size: 10.5px;
             img{
-                width: 37px;
+                width: 34px;
             }
         }
         &__link{
@@ -271,8 +275,9 @@
     }
     .advantage{
         &__subheader{
-            font-size: 25px;
-            line-height: 25px;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
         }
         &__title{
             font-size: 19px;
