@@ -15,17 +15,6 @@
     .d-hidden{
         display: block;
     }
-    .button{
-        width: 150px;
-        height: 30px;
-        font-size: 11px;
-        &_main{
-            margin-top: 67px;
-            width: 280px;
-            height: 45px;
-            font-size: 15px;
-        }
-    }
     .header{
         &__logo{
             width: 240px;
@@ -81,17 +70,6 @@
     }
 }
 @media (max-width: 711px){
-    .button{
-        width: 160px;
-        height: 35px;
-        font-size: 12px;
-        &_main{
-            margin-top: 67px;
-            width: 280px;
-            height: 45px;
-            font-size: 15px;
-        }
-    }
     .header{
         flex-wrap: wrap;
         width: 100%;
@@ -117,16 +95,6 @@
     }
 }
 @media (max-width: 575px){
-    .button{
-        width: 150px;
-        height: 30px;
-        font-size: 11px;
-        &_main{
-            width: 260px;
-            height: 40px;
-            font-size: 14px;
-        }
-    }
     .header{
         &__logo{
             width: 250px;
@@ -201,17 +169,6 @@
     }
 }
 @media (max-width: 426px){
-    .button{
-        width: 124px;
-        height: 25px;
-        font-size: 10px;
-        &_main{
-            margin-top: 67px;
-            width: 190px;
-            height: 35px;
-            font-size: 12px;
-        }
-    }
     .header{
         &__official{
             font-size: 9.5px;
