@@ -1,0 +1,36 @@
+.title{
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &_left{
+        color: #FFFFFF;
+        font-size: 36px;
+        text-align: left;
+    }
+}
+@media (max-width: 767px){
+    .advantage{
+        .title{
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width: 476px){
+    .advantage{
+        .title{
+            padding: 0 90px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 381px){
+    .advantage{
+        .title{
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}

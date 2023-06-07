@@ -63,10 +63,6 @@
         }
     }
     .advantage{
-        &__subheader{
-            font-size: 28px;
-            line-height: 28px;
-        }
         &__icon{
             margin: 0 auto;
             font-size: 15px;
@@ -184,14 +180,14 @@
             line-height: 33px;
             text-align: center;
             width: 100%;
-            padding: 0 25px;
+            padding: 0 40px;
         }
         &__subheader{
             font-size: 20px;
             line-height: 20px;
             text-align: center;
             width: 100%;
-            padding: 0 20px;
+            padding: 0 30px;
         }
         &__icons{
             width: 380px;
@@ -274,11 +270,6 @@
         }
     }
     .advantage{
-        &__subheader{
-            text-align: center;
-            width: 100%;
-            padding: 0 20px;
-        }
         &__title{
             font-size: 19px;
             line-height: 31px;
