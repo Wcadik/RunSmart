@@ -5,41 +5,6 @@
         }
     }
 }
-@media (max-width: 992px){
-    .carousel{
-        &__inner{
-            .slick-dots{
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                list-style-type: none;
-                border-top: 2px solid #D0D0D0;
-                margin: 0 0px -1px 0px;
-                padding: 0;
-                button {
-                    margin: 20px 40px 20px 40px;
-                    font-size: 0;
-                }
-                li {
-                    button{
-                        width: 46px;
-                        height: 20px;
-                        border-radius: 20px;
-                        border: 2px solid #D0D0D0;
-                        background-color: #fff;
-                        cursor: pointer;
-                    }
-                    &.slick-active > button{
-                        border: 2px solid #D0D0D0;
-                        background-color: rgba(199, 1, 1, 0.9);
-                        transition: 750ms all;
-                    }
-                }
-            }
-        }            
-    }
-}
 @media (max-width: 968px){
     .header{
         padding: 0 20px 0 20px;
@@ -126,14 +91,6 @@
         }
         &__descr{
             font-size: 16px;
-        }
-    }
-    .carousel{
-        &__inner{
-           width: 98%;
-           img{
-            width: 90vw;
-           }
         }
     }
 }
@@ -305,15 +262,6 @@
             font-size: 14px;
         }
     }
-    .carousel{
-        &__inner{
-            .slick-dots{
-                button {
-                    margin: 15px 30px 15px 30px;
-                }
-            }
-        }
-    }
 }
 @media (max-width: 381px){
     .header{
@@ -379,15 +327,6 @@
         }
         .feed-form{
             width: 100%;
-        }
-    }
-    .carousel{
-        &__inner{
-            .slick-dots{
-                button {
-                    margin: 10px 20px 10px 20px;
-                }
-            }
         }
     }
 }
