@@ -43,12 +43,16 @@
     }
     &__content{
         margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     &-item{
         width: 300px;
         min-height: 440px;
         border: 2px solid #E8E8E8;
         padding: 20px 20px 27px 20px;
+        overflow: hidden;
         &__img{
             display: block;
             margin: 0 auto;
@@ -109,6 +113,51 @@
             font-family: 'MuseoModerno','Museo Sans Cyrl';
             font-size: 20px;
             font-weight: 700;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: .35s all;
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            padding-right: 20px;
+            transition: .35s all;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+            transform: translateX(0%);
+            &_active{
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+            li{
+                position: relative;
+                color: #555;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 5px;
+                    width: 5px;
+                    background-color: $mc;
+                    left: -14px;
+                    top: 6px;
+                }
+            }
         }
     }
 }
