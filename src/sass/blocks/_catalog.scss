@@ -22,10 +22,10 @@
         margin: 0 5px;
         text-transform: uppercase;
         cursor: pointer;
-        transition: .25s;
+        transition: .35s;
         &:hover{
             box-shadow: 0px 1px 12px $mc;
-            margin-top: -5px;
+            margin-top: auto;
         }
         div{
             transform: skewX(25deg);
@@ -35,17 +35,21 @@
             border: none;
             background-color: $mc;
             cursor: default;
+            transform: skewX(-25deg) translateY(-3px);
+            transition: .35s;
             &:hover{
-                box-shadow: none;
+                box-shadow: 0px 1px 12px $mc;
                 margin-top: auto;
             }
         }
     }
     &__content{
         margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
+        display: none;
         flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
     }
     &-item{
         width: 300px;
@@ -53,6 +57,8 @@
         border: 2px solid #E8E8E8;
         padding: 20px 20px 27px 20px;
         overflow: hidden;
+        margin: 0 5px;
+        margin-bottom: 20px;
         &__img{
             display: block;
             margin: 0 auto;
@@ -82,9 +88,26 @@
             color: $mc;
             text-align: center;
             text-decoration: underline;
+            text-transform: uppercase;
             font-size: 14px;
             font-weight: 500;
             text-align: center;
+            &:hover{
+                color: $mc;
+            }
+        }
+        &__back{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 20px));
+            margin-top: 17px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $mc;
+            text-decoration: underline;
+            text-transform: uppercase;
             &:hover{
                 color: $mc;
             }
@@ -134,7 +157,7 @@
             margin-left: 20px;
             padding-right: 20px;
             transition: .35s all;
-            padding-left: 19px;
+            padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
             transform: translateX(0%);
