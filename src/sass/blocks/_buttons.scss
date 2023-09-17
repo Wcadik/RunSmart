@@ -8,6 +8,13 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: all .15s;
+    &:hover{
+        filter: contrast(120%);
+    }
+    &:active{
+        filter: contrast(150%);
+    }
     &_main{
         margin-top: 67px;
         width: 300px;

@@ -1,0 +1,36 @@
+.reviews{
+    padding: 0 0 50px 0;
+    &__review{
+        display: flex;
+        margin-top: 60px;
+        justify-content: flex-start;
+        &-name{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: #0D0D0D;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+            span{
+                color: #646464;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        &-photo{
+            display: inline-block;
+            margin-right: 60px;
+            img{
+                max-width: 170px;
+                height: auto;
+                display: inline-block;
+            }
+        }
+        &-descr{
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+}
