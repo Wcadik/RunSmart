@@ -1,9 +1,12 @@
 .map{
-    background: #c62f2f;
-    padding: 0 0 359px 0;
+    position: relative;
+    padding: 0 0 0 0;
     &__content{
+        position: absolute;
         display: block;
-        margin: 0 auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 50px 0 56px;
         background: $mc;
         width: 460px;
@@ -11,12 +14,17 @@
         &-number{
             display: block;
             margin-top: 36px;
-            color: #FFF;
+            color: #fff;
             text-align: center;
             font-family: 'MuseoModerno';
             font-size: 20px;
             line-height: 0;
             font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+                text-decoration: none;
+            }
         }
         &-street{
             color: #FFF;
@@ -30,8 +38,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
             img{
+                cursor: pointer;
                 margin: 0 15px;
             }
         }
