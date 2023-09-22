@@ -1,7 +1,12 @@
-@media (max-width: 1013px){
+@media (max-width: 1024px){
     .consultation{
         .container{
             padding: 0 25px;
+        }
+    }
+    .catalog{
+        &__content{
+            justify-content: center;
         }
     }
 }
@@ -12,6 +17,27 @@
     .promo{
         &__wrapper{
             padding-right: 20px;
+        }
+    }
+    .reviews{
+        &__review{
+            flex-direction: column;
+            align-items: center;
+            &-photo{
+                margin: 0 auto;
+            }
+            &-content{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+            }
+            &-name{
+                align-items: center;
+            }
+            &-descr{
+                padding: 0 50px;
+            }
         }
     }
 }
@@ -25,7 +51,7 @@
         }
     }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .d-visible{
         display: none;
     }
@@ -91,6 +117,38 @@
         }
         &__descr{
             font-size: 16px;
+        }
+    }
+    .catalog{
+        &__tabs{
+            flex-wrap: wrap;
+            margin: 0;
+            margin: 0 20vw;
+        }
+        &__tab{
+            margin-top: 10px;
+        }
+    }
+    .map{
+        height: 315px;
+        &__content{
+            padding: 29.5px 33px;
+            width: 300px;
+            height: 176px;
+            &-street{
+                font-size: 18px;
+            }
+            &-number{
+                margin-top: 21px;
+                font-size: 18px;
+            }
+            &-social_networks{
+                margin-top: 30px;
+                img{
+                    width: 45px;
+                    height: auto;
+                }
+            }
         }
     }
 }
@@ -225,7 +283,11 @@
             font-size: 14px;
         }
     }
-    
+    .reviews{
+        .title{
+            font-size: 28px;
+        }
+    }
 }
 @media (max-width: 426px){
     .header{

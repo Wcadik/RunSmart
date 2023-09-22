@@ -1,12 +1,22 @@
 @import '../base/variables';
 *{
     font-family: 'Museo Sans Cyrl', sans-serif;
+    cursor: default;
     &::selection{
         background: rgb(210, 3, 3);
         color: white;
     }
     img{
         user-select: none;
+    }
+    ::-webkit-scrollbar {
+        width: 17px;
+        background: #ececec;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $mc;
+        box-shadow: inset 0 0 0 2px #ececec;
     }
 }
 .container{

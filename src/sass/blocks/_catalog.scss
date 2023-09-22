@@ -25,7 +25,10 @@
         transition: .35s;
         &:hover{
             box-shadow: 0px 1px 12px $mc;
-            margin-top: auto;
+            filter: contrast(120%);
+        }
+        &:active{
+            filter: contrast(150%);
         }
         div{
             transform: skewX(25deg);
@@ -39,7 +42,6 @@
             transition: .35s;
             &:hover{
                 box-shadow: 0px 1px 12px $mc;
-                margin-top: auto;
             }
         }
     }
