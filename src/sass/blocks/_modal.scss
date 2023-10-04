@@ -41,6 +41,23 @@
     &_mini{
         min-height: 140px;
     }
+    .error{
+        text-align: center;
+        border: .5px solid $mc;
+        outline: 1.5px solid $mc;
+        transition: .15s;
+        margin-bottom: 15px;
+        &:focus{
+            transition: .05s;
+            outline: 2.5px solid $mc;
+            border: .5px solid $mc;
+        }
+    }
+    label.error{
+        outline: none;
+        border: none;
+        text-align: center;
+    }
 }
 #consultation, #order, #thanks{
     display: none;
