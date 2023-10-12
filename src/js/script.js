@@ -68,7 +68,6 @@ $(document).ready(function(){
           },
           phone: {
             required: true,
-            minlength: 3
           },
           email: {
               required: true,
@@ -82,7 +81,6 @@ $(document).ready(function(){
           },
           phone: {
             required: "Пожалуйста, введите свой номер",
-            minlength: jQuery.validator.format("Нужно ввести более {0}-х символов"),
           },
           email: {
             required: "Пожайлуста, введите свой E-mail",
@@ -95,4 +93,6 @@ $(document).ready(function(){
     valideForms('#consultation-form');
     valideForms('#consultation form');
     valideForms('#order form');
+
+    $('input[name=phone]').mask("+(000) (99)-999-99-99");
 });

@@ -8,19 +8,22 @@
         color: #FFFFFF;
     }
     input.error{
-        text-align: left;
+        border: .5px solid $mc;
+        outline: 1.5px solid $mc;
     }
-    label.error{
-        color: white;
-        text-align: center;
+    .error{
         border: .5px solid $mc;
         outline: 1.5px solid $mc;
         transition: .15s;
         margin-bottom: 15px;
         &:focus{
-            transition: .05s;
             outline: 2.5px solid $mc;
             border: .5px solid $mc;
         }
+    }
+    label.error{
+        color: white;
+        outline: none;
+        border: none;
     }
 }
