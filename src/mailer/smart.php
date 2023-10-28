@@ -31,9 +31,9 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Данные';
 $mail->Body = '
 	Пользователь отправил данные:<br>
-	Имя: .$name.<br>
-	Телефон: .$phone.<br>
-	Почта: .$email.';
+	Имя: '. $name .'<br>
+	Телефон: '. $phone .'<br>
+	Почта: '. $email .'';
 if(!$mail->send()) {
     return false;
 } else {
