@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/blocks/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -63,7 +63,7 @@
 
             <div class="d-visible advantage__icons">
                 <div class="advantage__icon">
-                    <img src="icons/cup.svg" alt="cup">
+                    <img src="icons/cup.svg" alt="cup" class="advantage__item advantage__item_animated-cup">
                     <span class="advantage__title">Делимся опытом</span>
                     <span class="advantage__descr">
                         Наши сотрудники всегда готовы<br>
@@ -74,7 +74,7 @@
                     </span>
                 </div>
                 <div class="advantage__icon">
-                    <img src="icons/heart.svg" alt="heart">
+                    <img src="icons/heart.svg" alt="heart" class="advantage__item advantage__item_animated-heart">
                     <span class="advantage__title">Заботимся о здоровье</span>
                     <span class="advantage__descr">
                         Мы работаем для того,<br>
@@ -84,7 +84,7 @@
                     </span>
                 </div>
                 <div class="advantage__icon">
-                    <img src="icons/shoe.svg" alt="shoe">
+                    <img src="icons/shoe.svg" alt="shoe" class="advantage__item advantage__item_animated-shoe">
                     <span class="advantage__title">Учим бегать</span>
                     <span class="advantage__descr">
                         Помогаем с обучением<br>
@@ -768,6 +768,10 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

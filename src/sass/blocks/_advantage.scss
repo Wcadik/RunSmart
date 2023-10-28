@@ -39,6 +39,23 @@
             color: #FF0000;
         }
     }
+    &__item{
+        transition: all .25s;
+        &:hover{
+                    animation-play-state: paused;
+        }
+        &_animated{
+            &-cup{
+                animation: StimmingCup 1.25s linear infinite;
+            }
+            &-heart{
+                animation: Heartbeat 1.25s ease infinite;
+            }
+            &-shoe{
+                animation: SneakerJump 3s ease infinite;
+            }
+        }
+    }
 }
 .d-visible{
     display: flex;
