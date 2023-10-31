@@ -222,9 +222,12 @@
 }
 @media (max-width: 476px){
     .modal{
-        height: 75%;
-        width: 65%;
+        width: 100%;
         padding: 21px 31px 31px 31px;
+        &__close{
+            right: 5px;
+            top: 5px;
+        }
         .feed-form{
             // margin-top: 10px;
             width: 100%;
@@ -390,11 +393,8 @@
         }
     }
     .modal{
-        height: 80%;
-        width: 65%;
         padding: 21px 31px 31px 31px;
         .feed-form{
-            // margin-top: 10px;
             width: 100%;
         }
     }

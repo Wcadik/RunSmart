@@ -46,13 +46,13 @@
         }
         &_animated{
             &-cup{
-                animation: StimmingCup 1.25s linear infinite;
+                animation: StimmingCup .7s linear infinite;
             }
             &-heart{
                 animation: Heartbeat 1.25s ease infinite;
             }
             &-shoe{
-                animation: SneakerJump 3s ease infinite;
+                animation: SneakerJump 2.75s ease infinite;
             }
         }
     }

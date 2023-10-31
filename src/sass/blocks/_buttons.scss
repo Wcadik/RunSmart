@@ -8,7 +8,6 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    transition: all .15s;
     &:hover{
         filter: contrast(120%);
     }
@@ -30,6 +29,7 @@
         width: 135px;
         height: 44px;
         font-size: 14px;
+        outline: none;
     }
 }
 @media (max-width: 767px){
@@ -78,7 +78,6 @@
 }
 @media (max-width: 575px){
     .button{
-        width: 150px;
         height: 30px;
         font-size: 11px;
         &_main{
@@ -100,7 +99,6 @@
 }
 @media (max-width: 426px){
     .button{
-        width: 135px;
         height: 30px;
         font-size: 11px;
         &_main{

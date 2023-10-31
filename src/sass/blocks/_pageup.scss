@@ -7,5 +7,12 @@
     height: 40px;
     img{
         width: 100%;
+        cursor: pointer;
+        &:hover{
+            filter: contrast(120%);
+        }
+        &:active{
+            filter: contrast(200%);
+        }
     }
 }

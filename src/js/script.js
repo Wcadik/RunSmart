@@ -2,7 +2,6 @@ $(document).ready(function(){
   $('.carousel__inner').slick({
       dots: false,
       speed: 560,
-      // adaptiveHeight: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.svg"></button>',
@@ -119,15 +118,21 @@ $(document).ready(function(){
     // Smooth scroll and pageup
 
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 1000){
+      if ($(this).scrollTop() > 1600){
         $('.pageup').fadeIn('fast');
       } else{
         $('.pageup').fadeOut('fast');
       }
     });
 
-    $("a[href^='#']").click(function(){
+    $("a[href=#up]").click(function(){
       const _href = $(this).attr("href");
       $("html, body").animate({scrollTop: $(_href).offset().top+"px"})
+    });
+
+    new WOW().init();
+
+    $("a[href^=#]").click(function(e){
+      e.preventDefault();
     });
 });
